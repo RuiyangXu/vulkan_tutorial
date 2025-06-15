@@ -8,6 +8,7 @@ VulkanWindow::VulkanWindow() {
 
 VulkanWindow::~VulkanWindow() {
     glfwDestroyWindow(window_);
+    glfwTerminate();
 }
 
 void VulkanWindow::run() {
