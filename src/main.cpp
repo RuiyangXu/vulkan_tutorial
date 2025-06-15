@@ -1,8 +1,11 @@
 #include <iostream>
-#include "../include/window.hpp"
+#include "window.hpp"
+#include "instance.hpp"
+#include "device.hpp"
 
 int main(int, char**){
-    std::cout << "Hello, from vulkan_tutorial!\n";
     VulkanWindow window;
+    Instance instance;
+    Device device(instance);
     window.run();
 }
